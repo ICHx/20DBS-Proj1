@@ -1,4 +1,4 @@
-//the class to open JDBC connection to any Sqlite file(with slight adjust, can connect to mysql server)
+package server;//the class to open JDBC connection to any Sqlite file(with slight adjust, can connect to mysql server)
 
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
@@ -58,7 +58,7 @@ public class DBConnect {
             
         }
         
-        sqlObj = new Sql2o(url, "Student", "");
+        sqlObj = new Sql2o(url, "server.Student", "");
         System.out.println("Connection to SQLite established.");
         
         // initialize db if is new

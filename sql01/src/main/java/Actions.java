@@ -1,4 +1,4 @@
-//the class to static methods to conduct sql manipulation
+package server;//the class to static methods to conduct sql manipulation
 
 import org.sql2o.Connection;
 import org.sql2o.Query;
@@ -57,7 +57,7 @@ public class Actions {
     // ? select * from accounts as ac order by ac.gender where ac.gender = 'M'
     
     public void printStudents() {
-        System.out.println("\nStudent List:\n");
+        System.out.println("\nserver.Student List:\n");
         List<Student> ls = this.getStudents();
         
         for (Student student : ls) {
@@ -66,7 +66,7 @@ public class Actions {
     }
     
     public void printStudents(String criteria) {
-        System.out.println("\nStudent List: " + criteria + "\n");
+        System.out.println("\nserver.Student List: " + criteria + "\n");
         List<Student> ls = this.getStudents(criteria);
         for (Student student : ls) {
             System.out.println(student);
@@ -99,7 +99,7 @@ public class Actions {
             
             //! Stuck here so long because I do not know how Sql2o get data from the pojo.  It turns out, I used private attributes which it couldn't receive.
             
-            //? As a result, I changed Student pojos into using public attributes.
+            //? As a result, I changed server.Student pojos into using public attributes.
             conn.commit();
             
             System.out.println("I: UID record add suceed. " + stud0.getUID());
@@ -182,10 +182,10 @@ public class Actions {
             q2.executeUpdate();
             
             c.commit();
-            System.out.printf("Student %s removed.\n==============\n", Uid);
+            System.out.printf("server.Student %s removed.\n==============\n", Uid);
         }catch (Exception e){
             e.printStackTrace();
-            System.out.printf("Student %s not removed.\n==============\n", Uid);
+            System.out.printf("server.Student %s not removed.\n==============\n", Uid);
         }
     }
 

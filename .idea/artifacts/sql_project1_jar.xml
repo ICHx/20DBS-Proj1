@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sql-project1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sql_project1_jar</output-path>
+    <root id="archive" name="sql-project1.jar">
+      <element id="module-output" name="sql-project1" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/sql2o/sql2o/1.6.0/sql2o-1.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.32.3.2/sqlite-jdbc-3.32.3.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

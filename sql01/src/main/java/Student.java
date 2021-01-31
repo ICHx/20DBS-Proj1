@@ -1,3 +1,5 @@
+package server;
+
 public class Student {
     // POJO class for data tuples.
     
